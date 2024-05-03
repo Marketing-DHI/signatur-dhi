@@ -1,0 +1,154 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark only">
+    <style type="text/css">
+        :root {
+            color-scheme: light dark;
+            supported-color-schemes: light dark;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Barlow', Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        p,
+        a {
+            color: #222222;
+            margin-top: 0;
+            margin-bottom: 16px;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        p.name {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        p.position {
+            color: #6f6f6f;
+        }
+
+        .bold {
+            font-weight: 500;
+        }
+
+        table {
+            border-collapse: collapse;
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+
+        table#backgroundTable {
+            width: 100%;
+            max-width: 660px;
+        }
+
+
+        tr {
+            background: #fcfcfc;
+        }
+
+
+
+        td {
+            padding: 30px;
+        }
+
+        table.inner-row td {
+
+            padding: 0;
+
+        }
+
+
+
+        a.icon-linkedin {
+            margin-right: 20px;
+        }
+
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                color: #fcfcfc;
+            }
+
+            p,
+            a {
+                color: #fcfcfc;
+            }
+
+            p.position {
+                color: #d0d0d0;
+            }
+
+            tr {
+                background: #242424;
+            }
+        }
+
+        @media (max-width: 425px) {
+
+            table#backgroundTable>tbody>tr>td {
+                display: block;
+                width: 100%;
+                padding: 15px;
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <table id="backgroundTable">
+        <tr>
+            <td valign="top">
+                <p class="name">Vorname Name</p>
+                <p class="position">Abteilung/Verantwortungsbereich</p>
+                <p class="tel">T: <a href="tel:+49 000 000 00 00">+49 000 000 00 00</a></p>
+                <p class="mob">M: <a href="tel:+49 000 000 00 00">+49 000 000 00 00</a></p>
+                <p class="email"><a href="mailto:email@digitalhubindustry.de">email@digitalhubindustry.de</a></p>
+            </td>
+            <td valign="top">
+                <table class="inner-row">
+                    <tr>
+                        <td valign="top">
+                            <img src="/img/DHI-dhi-bildmarke.png">
+                        </td>
+                        <td valign="top">
+                            <p class="bold">DIGITAL HUB INDUSTRY Bremen</p>
+                            <p>Konrad-Zuse-Straße 6a</p>
+                            <p>28359 Bremen</p>
+                            <p class="bold"><a href="https://digitalhubindustry.de/">www.digitalhubindustry.de</a></p>
+                            <a class="icon-linkedin" href="#linkedin">
+                                <img src="/img/linkedin-original.png" alt="LinkedIn">
+                            </a> <a class="icon-insta" href="#insta">
+                                <img src="/img/instagram-original.png" alt="Instagram">
+                            </a>
+                        </td>
+
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
