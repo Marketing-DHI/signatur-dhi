@@ -6,11 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="light dark">
-    <meta name="supported-color-schemes" content="light dark only">
+    <meta name="supported-color-schemes" value="light dark">
     <style type="text/css">
         :root {
             color-scheme: light dark;
-            supported-color-schemes: light dark;
         }
 
         body {
@@ -21,7 +20,6 @@
 
         p,
         a {
-            color: #222222;
             margin-top: 0;
             margin-bottom: 10px;
 
@@ -42,7 +40,6 @@
         }
 
         p.position {
-            color: #6f6f6f;
             margin-bottom: 30px;
         }
 
@@ -78,10 +75,6 @@
         }
 
 
-        tr {
-            background: #fcfcfc;
-        }
-
         td {
             padding: 30px 0 30px 30px;
         }
@@ -100,22 +93,35 @@
             margin-right: 20px;
         }
 
+        @media (prefers-color-scheme: light) {
 
-        @media (prefers-color-scheme: dark) {
-            body {
-                color: #fcfcfc;
+            #backgroundTable p,
+            #backgroundTable a {
+                color: #222222;
+
             }
 
-            p,
-            a {
+            p.position {
+                color: #6f6f6f;
+            }
+
+            #backgroundTable tr {
+                background: #fcfcfc;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+
+            #backgroundTable p,
+            #backgroundTable a {
                 color: #fcfcfc;
             }
 
             p.position {
-                color: #d0d0d0;
+                color: #d0d0d0
             }
 
-            tr {
+            #backgroundTable tr {
                 background: #242424;
             }
         }
