@@ -12,16 +12,16 @@
             color-scheme: light dark;
         }
 
-        body {
+        body table{
             font-family: 'Barlow', Arial, Helvetica, sans-serif;
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 400;
         }
 
         p,
         a {
             margin-top: 0;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
 
         }
 
@@ -35,18 +35,18 @@
 
 
         p.name {
-            font-size: 20px;
+            font-size: 14px;
             font-weight: 600;
         }
 
         p.position {
-            margin-bottom: 30px;
+            margin-bottom: 12px;
         }
 
         .tel span,
         .mob span {
             font-weight: 700;
-            margin-right: 6px;
+            margin-right: 8px;
 
         }
 
@@ -71,12 +71,12 @@
 
         table#backgroundTable {
             width: 100%;
-            max-width: 700px;
+            max-width: 600px;
         }
 
 
         td {
-            padding: 30px 0 30px 30px;
+            padding: 12px 0 12px 12px;
         }
 
         table.inner-row td {
@@ -86,12 +86,18 @@
         }
 
         img.bildmarke {
-            margin-right: 30px;
+            margin-right: 10px;
+            max-width: 80px;
+        }
+        .icon img {
+            margin-top: 5px;
+            max-width: 30px;
         }
 
         a.icon-linkedin {
-            margin-right: 20px;
+            margin-right: 10px;
         }
+
 
         @media (prefers-color-scheme: light) {
 
@@ -135,7 +141,7 @@
             }
 
             img.bildmarke {
-                margin-right: 15px;
+                margin-right: 10px;
             }
         }
     </style>
@@ -149,8 +155,8 @@
                 <p class="name">Frank Bittner
                 </p>
                 <p class="position">HUB Manager</p>
-                <p class="tel"><span>T</span><a href="tel:+4942149189101">+49 421 49189 101</a></p>
-                <p class="mob"><span>M</span><a href="tel:+491795090751">+49 179 50 90 751</a></p>
+                <p class="tel bold"><span>T</span><a href="tel:+4942149189101">+49 421 49189 101</a></p>
+                <p class="mob bold"><span>M</span><a href="tel:+491795090751">+49 179 50 90 751</a></p>
                 <p class="email"><a href="mailto:frank.bittner@digitalhubindustry.de">frank.bittner@digitalhubindustry.de</a></p>
             </td>
             <td valign="top">
@@ -164,9 +170,9 @@
                             <p>Konrad-Zuse-Straße 6a</p>
                             <p>28359 Bremen</p>
                             <p class="bold"><a href="https://digitalhubindustry.de/">www.digitalhubindustry.de</a></p>
-                            <a class="icon-linkedin" href="https://de.linkedin.com/company/digital-hub-industry">
+                            <a class="icon icon-linkedin" href="https://de.linkedin.com/company/digital-hub-industry">
                                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHESURBVHgB7ZjRVcIwFIb/RAboBuIG5Xh4FidQN4AJdAPrBIwgbsAG1mfl6AZ0hCwA8U8qtS1J4aGhPPQ/p5Te3CYfN/fc3IMApb8RYYt7XkOcWhIZr1SMkAkLs8IaugOQnYQFGkn9xYh0CWJk1ufOSFJFOBNJnJGaYFJeDwzhLe9vOIEGTqvAQlxjVrKkzC3F+yMCyh2ZrSMSF0gQWG6YjpLaB3OzZzNFMbDcOaPxxEKoiGq2S1kQjTk6gcmBEmzC50lZA4ST4nYr++3ICu/bpg9+JjXrhJM/Fwtp1qCqYo6brUw59iLGtk7l0+0OYvD9BjA3jMSadSat8K04iS4eVXkxO/5pf4SBSOrT8UQ2EVoQKiXUuw+oveNgwBZg3Jxjpk0gzMw33hqMXegYPxNR4fZtPYG5nSYvJvlDNXf+nWxODhEShiBzU6MKg0DMPLn6y5kyTAax/367LYTGtGaJPJVbuV5vDYYRGNrF63L11TIwTBvqYXzqYXzqYXw6KxjfcTBhaX+tWKrHfrQ3vvE08QJ39L1smOsATO48hV+Ro/T7FNM3PsaxzxmntsgkcZa+ZueE+jF9T9FVMMmmHf5ztTQ9zy8xFIXU7Pm95AAAAABJRU5ErkJggg==" alt="LinkedIn">
-                            </a> <a class="icon-insta" href="https://www.instagram.com/digitalhubindustry/">
+                            </a> <a class="icon icon-insta" href="https://www.instagram.com/digitalhubindustry/">
                                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARWSURBVHgBtVhdUhtHEO6eFcZVLjtrkaSCw8PqBFlQXOW3SCeIbmDdwHAC4ATYJwBOADdAeUtVoKwbsA8YVZGYrIVdZVhmxt37OyvE7mDEVyXtzv+3Pf03g1CB447nPvnyxZNS+VmdEtoDC6CCEAHDuCAwcBDDn//5d1g5Zlrl6PcfO1rrdQDNJFyYITTgjkDcXTz8bwBVZFgSj8cXWxp1Hx4YTOpKPl1rDYPwBhkm8ujz+AA1+DdGIpB4WeQq1Iih5XqAGr10aRemzQsQXMpnyxmhRlb7+IIkAqUBAU23dinloDUMrQlU4bS90CNiW/TqpVXevHOxR89uTJ7/Eh1RB8Uw3CUSq7MiMYmTdvOtAHiTr4aiyzok4pLWr42+wayJ8Md+aDe3T1YW+lxeOjpfJQqDrD0xFjK6uAC6lzUojZszJfLqF4+lTlvQF6i3T1eaq1yPiJtFr9hqQZy8/Klkvo6SA7gDRq9c74zm4OfUDldRxyxqhN/4mZp29tHu2UvXF47Wph8JFodhAHUESOykjAen7eb/OhLH10q+5yeXqX6P27O+X5XcNxalLcG/ipmKrboCx2/Qvni5gSMGFRxi858fj9dJ7Ku3dKEP0z3Sgd6H9kLuR0a+uwzC6bAnXjoynZ3+ZA5ugCUyP0TEJ/1FmP5cMLYbQfcfOWP/2Pe6i8MgoKqdujUEWIIlUnKIiAM2yRdH58/p1+InStWilt2CEPjkR7Zt17Aiw8pFM+dbQ0q4+eLwY3cyvrC+Eak+txe1umfqkAnqF5TI2ERhqZzcQZGX3vn18Hyjqn/SrvfzMakfqYOVZEw/NCfUO5sxiI7RT3dId2qjfy0ZsgQPCsWknCQcggXSLQyy8pO50KsbU0tGzs2ZX/Tdnlnqxv0l40TRfUJD4dnxunaeWjKpR84m8m6zjElwTDLJ2GyvpZ/BfCKyjDdWQ6KosCAs3H5pVp3nNfZkJiJsb7TSrDRVbicL7OfjwRx/O6zIsGUogNxUyVltUOzZPksifkEiCaB73J73Jb80LfmehoZQGFACXtsxkmpj3hF/QJqacuyhaN2nSB3SirFOUQD1zDFEanh1rdbAAoKONtaxiROuS6m6poRSuMTMi38GFOA7ItKtTtTwh/yNEv0JMtqtI8Qpo5JqGZKAOLlQmAXQpaOPNqlraT3kTE9QcpRV0NHhuXmWqQNneI4EVzoQLv5dn5iZ4GQsI8TrNqIoCkgXsnyEYs8Fx6Ed2wnvSiBDeiLJJBOwAEQiysKPUNK8bhPU7gsikuc5ZD6DeG3+K/sR8ChDO3hIQqOVBSbiZWUhVbx+frzlBJtDvTEm4GNL9Ozpfmtgr0OVJGhrFKgtM2Nkq2NlL5E59l2XdOe9yTgDiXGYXW+QZw3g7vAxmbck7dQP5eZfvoVICL2l19fw4Lh5hK64n1F9ev0TZns/E2oB+0KL+vuZaeBkPE6MVJIr0za5NGEtwdLNFcFx5LAujfgGcmoZx9vwhToAAAAASUVORK5CYII=" alt="Instagram">
                             </a>
                         </td>
