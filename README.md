@@ -1,5 +1,4 @@
-# signatur-dhi
-Signatur für Emails 2024
+# Signatur für Emails 2025 mit de:hub Logo
 
 ## How-To Apple Mail
 
